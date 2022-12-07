@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{% block titulo%} {% endblock %} | Mauricio</title>
+    {% load static %}
+  </head>
+  <body>
+    <header>
+      <div id="logotipo">
+        <h1>Unidad de competencia 3 - LP3</h1>
+      </div>
+    </header>
+    
+  <nav>
+
+  
+    <ul>
+      <li>
+        <a href="/inicio">Inicio</a>
+      </li>
+    </ul>
+    
+
+    </nav>
+    <div class="barra">
+      <span class="esquina-izquierda"></span>
+      <span class="relleno-barra"></span>
+      <span class="esquina-derecha"></span>
+      </div>
+
+    <div id="content">
+      <div class="box">
+        
+      {% block content %}
+      <strong> Contenido en layout </strong>
+      {% endblock %}
+      </div>
+      
+    </div>
+  </body>
+</html>
